@@ -16,6 +16,11 @@ $color-navbar: rgba(143, 147, 162, 0.6);
   background-position: center;
 }
 
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+}
+
 
 @media screen and (min-width: 768px) {
   .carousel-item {

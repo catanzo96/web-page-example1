@@ -14,13 +14,20 @@ $color-navbar: rgba(143, 147, 162, 0.6);
   width: 100%;
   background-size: cover;
   background-position: center;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 0.7em;
+  }
 }
 
 .carousel-caption {
   position: absolute;
-  top: 40%;
+  top: 30%;
 }
-
 
 @media screen and (min-width: 768px) {
   .carousel-item {
@@ -28,5 +35,19 @@ $color-navbar: rgba(143, 147, 162, 0.6);
     width: 100%;
     background-size: cover;
     background-position: center;
+
+    h1 {
+      font-size: 5em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
   }
+
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
+  }
+
 }

@@ -1,4 +1,6 @@
 $color-navbar: rgba(143, 147, 162, 0.6);
+$color-jumbotron: rgb(216, 218, 227);
+$color-section1: rgb(238, 239, 243);
 
 .navbar {
   background-color: $color-navbar;
@@ -29,6 +31,37 @@ $color-navbar: rgba(143, 147, 162, 0.6);
   top: 30%;
 }
 
+.jumbotron {
+  padding: 1.5rem 2rem;
+  margin-bottom: 0rem;
+  border-radius: 0em;
+  background-color: $color-jumbotron;
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.section1 {
+  background-color: $color-section1;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  .image {
+    padding: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .carousel-item {
     height: 700px;
@@ -50,4 +83,9 @@ $color-navbar: rgba(143, 147, 162, 0.6);
     top: 40%;
   }
 
+  .section1 {
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
 }

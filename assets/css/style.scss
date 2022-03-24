@@ -1,6 +1,8 @@
 $color-navbar: rgba(143, 147, 162, 0.6);
 $color-jumbotron: rgb(216, 218, 227);
 $color-section1: rgb(238, 239, 243);
+$color-section3: rgb(108, 108, 108);
+$color-h1-section3: rgb(255, 255, 255);
 
 .navbar {
   background-color: $color-navbar;
@@ -79,6 +81,24 @@ $color-section1: rgb(238, 239, 243);
     height: 300px;
     object-fit: cover;
   }
+}
+
+.section3 {
+  background-color: $color-section3;
+
+  h1 {
+    font-size: 3em;
+    color: $color-h1-section3;
+  }
+
+  .form-text, label {
+    color: $color-h1-section3;
+  }
+
+  .form-control, .btn {
+    border-radius: 20px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {

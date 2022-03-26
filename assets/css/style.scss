@@ -3,6 +3,13 @@ $color-jumbotron: rgb(216, 218, 227);
 $color-section1: rgb(238, 239, 243);
 $color-section3: rgb(108, 108, 108);
 $color-h1-section3: rgb(255, 255, 255);
+$color-footer: rgb(0, 0, 0);
+$color-h4-footer: rgb(255, 255, 255);
+$color-p-footer: rgb(255, 255, 255);
+
+html {
+  scroll-behavior: smooth;
+}
 
 .navbar {
   background-color: $color-navbar;
@@ -85,6 +92,7 @@ $color-h1-section3: rgb(255, 255, 255);
 
 .section3 {
   background-color: $color-section3;
+  height: 270px;
 
   h1 {
     font-size: 3em;
@@ -98,7 +106,28 @@ $color-h1-section3: rgb(255, 255, 255);
   .form-control, .btn {
     border-radius: 20px;
   }
+}
 
+footer {
+  height: 400px;
+  background-color: $color-footer;
+
+  h4 {
+    color: $color-h4-footer;
+  }
+
+  .display-4 {
+    font-size: 1.5em;
+  }
+
+  hr.light {
+      border-top: 1px solid white;
+    }
+
+  p {
+    color: $color-p-footer;
+    margin-bottom: 2px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -125,6 +154,23 @@ $color-h1-section3: rgb(255, 255, 255);
   .section1 {
     .row-reverse {
       flex-direction: row-reverse;
+    }
+  }
+
+  .section3 {
+    height: 200px;
+  }
+
+  footer {
+    height: 200px;
+
+    .display-4 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 0.8em;
+      margin-bottom: 2px;
     }
   }
 }

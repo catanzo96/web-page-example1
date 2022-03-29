@@ -59,6 +59,21 @@ html {
   background-color: $color-section1;
 }
 
+.main-section {
+  a {
+    color: rgb(0, 0, 0);
+
+    :hover {
+      width: 200px;
+      padding-left: 5px;
+      border-radius: 10px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
+    }
+  }
+
+}
+
 .section1 {
   h1 {
     font-size: 3em;
